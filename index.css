@@ -1,0 +1,103 @@
+html, body {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #DFCFBE;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+    padding: 20px;
+}
+.pravidla{
+    padding: 15px;
+    margin: 20px;
+    width: 35%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    align-self: center;
+}
+output{
+font-family: 'Montserrat Alternates', sans-serif;
+}
+@keyframes Appearance {
+    from  {opacity: 0;}
+    to    {opacity: 1;}
+}
+.animation{
+animation-name: Appearance;
+animation-duration: 3.0s;
+}
+table{
+    align-self: center;
+    background-color: sandybrown;
+    animation-name: Appearance;
+    animation-duration: 0.7s;
+    border-radius: 5px;
+}
+td{
+    border: 1px solid black;
+    width: 46px;
+    height: 46px;
+    background-color: white;
+    border-radius: 4px;
+/*   display: inline-block;*/
+    margin: 0px 1px;
+}
+td:hover , .HraciPole:hover {
+    background-color: red;
+}
+td:focus , .HraciPole:focus {
+    background-color: green;
+}
+td.kolecko{
+    background-image: url(\Kolecko.png);
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+td.krizek{
+    background-image: url(\Krizek.png);
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+.HraciPole , .ObsazenePole{
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button{
+align-self: center;
+justify-self: center;
+width: 200px;
+height: 100px;
+border-radius: 15px;
+transition: background-color 1s;
+font-family: 'Montserrat Alternates', sans-serif;
+font-size: 30px;
+}
+input{
+    font-family: 'Montserrat Alternates', sans-serif;
+    border-radius: 15px;
+    animation-name: Appearance;
+    animation-duration: 1.0s;
+}
+#restarthry{
+visibility: hidden;
+}
+#starthry{
+    animation-name: Appearance;
+    animation-duration: 3.0s;
+}
+button:hover{
+    background-color: rgb(96,95,95);
+    background-color: radial-gradient(circle, rgba(96,95,95,1) 14%, rgba(122,122,122,1) 57%, rgba(154,153,153,1) 100%);
+}
